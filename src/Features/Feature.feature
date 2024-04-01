@@ -4,7 +4,7 @@ Background:
 Given I open Web URL as "https://www.saucedemo.com/v1/"
 
 @Login
-Scenario Outline: Verify login with invalid password
+Scenario Outline: Verify login with invalid password with two samples
 And I enter username as "<username>"
 And I enter password as "<password>"
 When I click on login button
