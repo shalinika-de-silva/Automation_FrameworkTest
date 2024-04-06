@@ -6,6 +6,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class WebDriverHelper {
 
     static WebDriver driver;
+    static WebDriverHelper helper;
+
+    public static WebDriverHelper getHelper(){
+        if (helper == null){
+            helper=new WebDriverHelper();
+        }
+        return helper;
+    }
 
     public WebDriver driverInitilization() {
 
